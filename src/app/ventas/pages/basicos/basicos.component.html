@@ -1,0 +1,25 @@
+<div class="text-layout">
+  <h1>Pipes básicos</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  </p>
+</div>
+
+<div class="p-grid">
+  <div class="p-col-4">
+    <p-card header="uppercase" [subheader]="nombreUpper | uppercase" >
+      {{ nombreUpper | uppercase }}
+    </p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card header="lowercase" [subheader]="nombreLower | lowercase" >
+      {{ nombreLower | uppercase }}
+    </p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card header="titlecase" [subheader]="nombreCompleto | titlecase" >
+      {{ nombreCompleto | titlecase}}
+    </p-card>
+  </div>
+</div>
+
