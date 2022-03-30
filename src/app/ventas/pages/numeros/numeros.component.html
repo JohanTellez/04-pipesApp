@@ -1,1 +1,31 @@
-<p>numeros works!</p>
+<div class="text-layout">
+  <h1>Decimalpipe y porcentaje</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  </p>
+</div>
+
+<div class="p-grid">
+  <div class="p-col-4">
+    <p-card header="Ventas  Netas" subheader="del presente año">
+      <i class="pi pi-dollar"> {{ (ventasNetas + 1000000) | number:'1.2-2' }} </i>
+    </p-card>
+  </div>
+
+  <div class="p-col-4">
+    <p-card header="Ventas  Brutas" subheader="del presente año">
+      {{ (ventasNetas + 2000000) | currency:'CAD':'symbol-narrow':'1.0-4' }}
+    </p-card>
+  </div>
+
+  <div class="p-col-4">
+    <p-card header="Ganacia %" subheader="del presente año">
+      {{ porcentaje | percent:'2.2-2' }}
+    </p-card>
+  </div>
+
+
+</div>
+
+
+
