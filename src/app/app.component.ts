@@ -21,11 +21,11 @@ export class AppComponent implements OnInit {
   }
 
   constructor(
-    private primeNGConfig: PrimeNGConfig,
+    private primeConfig: PrimeNGConfig,
   ) {}
 
   ngOnInit() {
-    this.primeNGConfig.ripple = true;
+    this.primeConfig.ripple = true;
   }
 
 }
